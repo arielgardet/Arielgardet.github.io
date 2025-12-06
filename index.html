@@ -27,4 +27,157 @@ h1, h2, h3, .display-4 {
 font-family: 'Playfair Display', serif;
 letter-spacing: 0.5px;
 }
-.
+.hero {
+background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('https://images.unsplash.com/photo-1582711012124-b1b27c7e7ca4?q=80&w=2000&auto=format&fit=crop') center/cover no-repeat;
+color: white;
+padding: 160px 0 100px;
+}
+.btn-gold {
+background-color: var(--primary);
+border-color: var(--primary);
+color: #000;
+font-weight: 600;
+}
+.btn-gold:hover {
+background-color: #c19a2e;
+border-color: #c19a2e;
+color: #000;
+}
+.section-title {
+position: relative;
+display: inline-block;
+padding-bottom: 12px;
+margin-bottom: 50px;
+}
+.section-title::after {
+content: '';
+position: absolute;
+width: 80px;
+height: 4px;
+background: var(--primary);
+bottom: 0;
+left: 50%;
+transform: translateX(-50%);
+}
+.card {
+transition: all 0.3s;
+border: none;
+border-radius: 12px;
+}
+.card:hover {
+transform: translateY(-10px);
+box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+footer {
+background-color: var(--dark);
+color: #aaa;
+}
+</style>
+</head>
+<body>
+
+<!-- Hero -->
+<section class="hero text-center">
+<div class="container">
+<h1 class="display-3 fw-bold">Ariel Gardet</h1>
+<p class="lead fs-3 mb-4">Client Relations • Luxury Experiences • Real Estate Investment Specialist</p>
+<p class="fs-5 opacity-90">Las Vegas, Nevada</p>
+<div class="mt-4">
+<a href="mailto:arielgardet@protonmail.com" class="btn btn-gold btn-lg me-3">Email Me</a>
+<a href="tel:+17253051405" class="btn btn-outline-light btn-lg">Call 725-305-1405</a>
+</div>
+</div>
+</section>
+
+<!-- About -->
+<section class="py-5">
+<div class="container">
+<h2 class="text-center section-title">About Me</h2>
+<div class="row justify-content-center">
+<div class="col-lg-8">
+<p class="lead text-center">
+Lifelong Las Vegas resident with a proven track record of delivering exceptional client experiences,
+managing high-stakes relationships, and executing complex deals in real estate and luxury entertainment.
+</p>
+<p class="text-center">
+Whether guiding investors through multimillion-dollar real estate transactions or curating exclusive,
+high-energy poker events for elite players, I specialize in understanding client needs and exceeding expectations.
+</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Experience -->
+<section class="py-5 bg-light">
+<div class="container">
+<h2 class="text-center section-title">Professional Experience</h2>
+<div class="row g-5">
+<div class="col-lg-10 mx-auto">
+<div class="card shadow-sm mb-4">
+<div class="card-body">
+<h4>Real Estate Investor Specialist</h4>
+<p class="text-muted">Las Vegas, NV • 2018 – 2024</p>
+<ul>
+<li>Advised high-net-worth investors on residential and commercial property acquisitions</li>
+<li>Specialized in new-build construction projects with a top-tier national builder</li>
+<li>Closed dozens of investment deals, consistently delivering strong ROI for clients</li>
+</ul>
+</div>
+</div>
+
+<div class="card shadow-sm">
+<div class="card-body">
+<h4>Founder & Host – HotGirlPoker / All In Party</h4>
+<p class="text-muted">Las Vegas, NV • 2020 – Present</p>
+<ul>
+<li>Created and scaled an exclusive poker entertainment brand in the heart of Las Vegas</li>
+<li>Hosted invite-only live games inside casinos and premium venues with gourmet food & beverage service</li>
+<li>Built and managed All In Party – a live-streamed online poker experience with real-time Discord banter</li>
+<li>Curated guest lists of high-profile players while maintaining a fun, laid-back, and safe atmosphere</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Skills -->
+<section class="py-5">
+<div class="container">
+<h2 class="text-center section-title">Core Strengths</h2>
+<div class="row text-center">
+<div class="col-md-3 col-6 mb-4"><strong>Client Relationship Management</strong></div>
+<div class="col-md-3 col-6 mb-4"><strong>High-Stakes Negotiation</strong></div>
+<div class="col-md-3 col-6 mb-4"><strong>Event Production & Hospitality</strong></div>
+<div class="col-md-3 col-6 mb-4"><strong>Real Estate Investment</strong></div>
+<div class="col-md-3 col-6 mb-4"><strong>Brand Building</strong></div>
+<div class="col-md-3 col-6 mb-4"><strong>Live Streaming & Community</strong></div>
+<div class="col-md-3 col-6 mb-4"><strong>Discretion & Service Trust</strong></div>
+<div class="col-md-3 col-6 mb-4"><strong>Las Vegas Network</strong></div>
+</div>
+</div>
+</section>
+
+<!-- Contact -->
+<section class="py-5 bg-dark text-white">
+<div class="container text-center">
+<h2 class="section-title text-white">Let’s Connect</h2>
+<p class="lead mb-4">Open to new opportunities in client-facing roles, partnerships, or luxury experience ventures.</p>
+<a href="mailto:arielgardet@protonmail.com" class="btn btn-gold btn-lg me-3">arielgardet@protonmail.com</a>
+<a href="tel:+17253051405" class="btn btn-outline-light btn-lg">725-305-1405</a>
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="py-4 text-center">
+<div class="container">
+<p class="mb-0">© 2025 Ariel Gardet • Las Vegas, Nevada</p>
+</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
