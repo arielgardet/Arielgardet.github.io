@@ -1,183 +1,292 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Ariel Gardet | Client Relations & Experiences | Las Vegas</title>
-<meta name="description" content="Ariel Gardet – Las Vegas-based professional with deep expertise in real estate investment, luxury client entertainment, and building exclusive high-touch experiences." />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ariel Gardet | Las Vegas Experiences & Investments</title>
+<meta name="description" content="Ariel Gardet – Expert in luxury client experiences, real estate investments, and exclusive events in Las Vegas.">
 
-<!-- Bootstrap 5 -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<!-- Bootstrap 5 CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<!-- Google Fonts (Hudson-like: elegant serif for headers) -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
 :root {
---primary: #d4af37; /* Vegas gold */
---dark: #1e1e1e;
---light: #f8f9fa;
+--primary-gold: #d4af37;
+--dark: #1a1a1a;
+--light-bg: #f8f7f5;
 }
 body {
-font-family: 'Inter', sans-serif;
-background-color: var(--light);
+font-family: 'Open Sans', sans-serif;
+line-height: 1.7;
 color: #333;
 }
-h1, h2, h3, .display-4 {
+h1, h2, h3 {
 font-family: 'Playfair Display', serif;
-letter-spacing: 0.5px;
 }
+/* Hero - Hudson style full banner */
 .hero {
-background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('https://images.unsplash.com/photo-1582711012124-b1b27c7e7ca4?q=80&w=2000&auto=format&fit=crop') center/cover no-repeat;
+background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1558618047-3c8c76ca3350?q=80&w=2000&auto=format&fit=crop') center/cover;
 color: white;
-padding: 160px 0 100px;
+padding: 200px 0 150px;
+text-align: center;
 }
-.btn-gold {
-background-color: var(--primary);
-border-color: var(--primary);
-color: #000;
-font-weight: 600;
+.hero h1 {
+font-size: 4rem;
+font-weight: 700;
 }
-.btn-gold:hover {
-background-color: #c19a2e;
-border-color: #c19a2e;
-color: #000;
+/* Sections - Clean, spaced like Hudson */
+.section {
+padding: 100px 0;
+}
+.section-dark {
+background: var(--dark);
+color: white;
+}
+.section-light {
+background: var(--light-bg);
 }
 .section-title {
-position: relative;
-display: inline-block;
-padding-bottom: 12px;
-margin-bottom: 50px;
+text-align: center;
+margin-bottom: 60px;
+font-size: 2.5rem;
 }
 .section-title::after {
 content: '';
-position: absolute;
-width: 80px;
-height: 4px;
-background: var(--primary);
-bottom: 0;
-left: 50%;
-transform: translateX(-50%);
+display: block;
+width: 50px;
+height: 3px;
+background: var(--primary-gold);
+margin: 20px auto;
 }
-.card {
-transition: all 0.3s;
+/* Services/Portfolio Cards - Hudson grid style */
+.feature-card {
+text-align: center;
+padding: 40px 20px;
+border-radius: 8px;
+transition: transform 0.3s, box-shadow 0.3s;
 border: none;
-border-radius: 12px;
 }
-.card:hover {
+.feature-card:hover {
 transform: translateY(-10px);
-box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+box-shadow: 0 15px 30px rgba(0,0,0,0.1);
 }
+.icon-placeholder {
+width: 60px;
+height: 60px;
+background: var(--primary-gold);
+border-radius: 50%;
+margin: 0 auto 20px;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 1.5rem;
+}
+/* Nav - Sticky like Hudson */
+.navbar {
+background: rgba(255,255,255,0.95);
+backdrop-filter: blur(10px);
+}
+.nav-link {
+font-weight: 600;
+color: var(--dark) !important;
+}
+.nav-link:hover {
+color: var(--primary-gold) !important;
+}
+/* Contact Form */
+.form-control {
+border-radius: 5px;
+border: 1px solid #ddd;
+}
+.btn-primary {
+background: var(--primary-gold);
+border-color: var(--primary-gold);
+color: #000;
+font-weight: 600;
+}
+.btn-primary:hover {
+background: #c19a2e;
+border-color: #c19a2e;
+}
+/* Footer */
 footer {
-background-color: var(--dark);
+background: var(--dark);
 color: #aaa;
+padding: 40px 0;
+text-align: center;
 }
 </style>
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="70">
 
-<!-- Hero -->
-<section class="hero text-center">
+<!-- Navigation - Hudson sticky nav -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar">
 <div class="container">
-<h1 class="display-3 fw-bold">Ariel Gardet</h1>
-<p class="lead fs-3 mb-4">Client Relations • Luxury Experiences • Real Estate Investment Specialist</p>
-<p class="fs-5 opacity-90">Las Vegas, Nevada</p>
-<div class="mt-4">
-<a href="mailto:arielgardet@protonmail.com" class="btn btn-gold btn-lg me-3">Email Me</a>
-<a href="tel:+17253051405" class="btn btn-outline-light btn-lg">Call 725-305-1405</a>
+<a class="navbar-brand fw-bold" href="#" style="color: var(--primary-gold);">Ariel Gardet</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+<ul class="navbar-nav">
+<li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+<li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+<li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+</ul>
+</div>
+</div>
+</nav>
+
+<!-- Hero Section - Like Hudson banner -->
+<section id="home" class="hero">
+<div class="container">
+<h1>Ariel Gardet</h1>
+<p class="lead fs-4 mb-4">Crafting Luxury Experiences & Smart Investments in Las Vegas</p>
+<p class="fs-5 opacity-90">Real Estate Specialist | Exclusive Event Host | Client Visionary</p>
+<div class="mt-5">
+<a href="#contact" class="btn btn-primary btn-lg me-3">Get In Touch</a>
+<a href="tel:+17253051405" class="btn btn-outline-light btn-lg">Call Now</a>
 </div>
 </div>
 </section>
 
-<!-- About -->
-<section class="py-5">
+<!-- About Section -->
+<section id="about" class="section section-light">
 <div class="container">
-<h2 class="text-center section-title">About Me</h2>
+<h2 class="section-title">About Me</h2>
+<div class="row justify-content-center">
+<div class="col-lg-8 text-center">
+<p class="lead fs-5">A lifelong Las Vegas resident, I've built a career blending high-stakes real estate with unforgettable luxury entertainment. From guiding investors through multimillion-dollar deals to hosting exclusive poker nights that keep the energy electric yet intimate, I thrive on creating value and connections that last.</p>
+<p>Whether it's closing deals in new-build constructions or curating laid-back, high-end games via HotGirlPoker and All In Party, my focus is always on fun, trust, and top-tier service.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Services Section - Hudson features grid -->
+<section id="services" class="section section-dark">
+<div class="container">
+<h2 class="section-title text-white">My Services</h2>
+<div class="row g-4">
+<div class="col-md-4">
+<div class="card feature-card bg-transparent text-white">
+<div class="icon-placeholder">🏠</div>
+<h4>Real Estate Investments</h4>
+<p>Expert guidance for investors in Las Vegas properties, specializing in new builds and high-ROI opportunities.</p>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card feature-card bg-transparent text-white">
+<div class="icon-placeholder">🎲</div>
+<h4>Exclusive Poker Events</h4>
+<p>Host custom HotGirlPoker nights—live or online—with gourmet amenities, live streams, and Discord banter for elite players.</p>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card feature-card bg-transparent text-white">
+<div class="icon-placeholder">🤝</div>
+<h4>Client Relations</h4>
+<p>High-touch management for discerning clients, ensuring seamless experiences from negotiation to execution.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Portfolio Section - Hudson portfolio style -->
+<section id="portfolio" class="section section-light">
+<div class="container">
+<h2 class="section-title">Featured Work</h2>
+<div class="row g-4">
+<div class="col-md-6">
+<div class="card feature-card h-100">
+<div class="icon-placeholder" style="background: var(--primary-gold); color: white;">🏗️</div>
+<h4>New Build Constructions</h4>
+<p>Collaborated with renowned builders on premium developments, delivering turnkey investments for 6+ years.</p>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card feature-card h-100">
+<div class="icon-placeholder" style="background: var(--primary-gold); color: white;">🖥️</div>
+<h4>All In Party Online Poker</h4>
+<p>Launched live-streamed exclusive games with real-time community interaction, building a loyal player base.</p>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card feature-card h-100">
+<div class="icon-placeholder" style="background: var(--primary-gold); color: white;">🍸</div>
+<h4>Live Venue Hosting</h4>
+<p>Curated casino and venue events with high-end food, drinks, and a fun, exclusive vibe for top players.</p>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card feature-card h-100">
+<div class="icon-placeholder" style="background: var(--primary-gold); color: white;">📈</div>
+<h4>Investor Advisory</h4>
+<p>2018-2024 track record of closing deals that maximized returns in a dynamic Vegas market.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="section section-dark">
+<div class="container">
+<h2 class="section-title text-white">Let's Connect</h2>
 <div class="row justify-content-center">
 <div class="col-lg-8">
-<p class="lead text-center">
-Lifelong Las Vegas resident with a proven track record of delivering exceptional client experiences,
-managing high-stakes relationships, and executing complex deals in real estate and luxury entertainment.
-</p>
-<p class="text-center">
-Whether guiding investors through multimillion-dollar real estate transactions or curating exclusive,
-high-energy poker events for elite players, I specialize in understanding client needs and exceeding expectations.
-</p>
+<p class="lead text-center mb-4">Ready for opportunities in real estate, events, or partnerships? Reach out—I'm based in Las Vegas and love collaborating.</p>
+<div class="row">
+<div class="col-md-6 mb-4">
+<h5>Contact Info</h5>
+<p><strong>Email:</strong> <a href="mailto:arielgardet@protonmail.com" class="text-white">arielgardet@protonmail.com</a></p>
+<p><strong>Phone:</strong> <a href="tel:+17253051405" class="text-white">725-305-1405</a></p>
+<p><strong>Location:</strong> Las Vegas, Nevada</p>
 </div>
+<div class="col-md-6">
+<form>
+<div class="mb-3">
+<input type="text" class="form-control" placeholder="Your Name" required>
 </div>
+<div class="mb-3">
+<input type="email" class="form-control" placeholder="Your Email" required>
 </div>
-</section>
-
-<!-- Experience -->
-<section class="py-5 bg-light">
-<div class="container">
-<h2 class="text-center section-title">Professional Experience</h2>
-<div class="row g-5">
-<div class="col-lg-10 mx-auto">
-<div class="card shadow-sm mb-4">
-<div class="card-body">
-<h4>Real Estate Investor Specialist</h4>
-<p class="text-muted">Las Vegas, NV • 2018 – 2024</p>
-<ul>
-<li>Advised high-net-worth investors on residential and commercial property acquisitions</li>
-<li>Specialized in new-build construction projects with a top-tier national builder</li>
-<li>Closed dozens of investment deals, consistently delivering strong ROI for clients</li>
-</ul>
+<div class="mb-3">
+<textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
 </div>
-</div>
-
-<div class="card shadow-sm">
-<div class="card-body">
-<h4>Founder & Host – HotGirlPoker / All In Party</h4>
-<p class="text-muted">Las Vegas, NV • 2020 – Present</p>
-<ul>
-<li>Created and scaled an exclusive poker entertainment brand in the heart of Las Vegas</li>
-<li>Hosted invite-only live games inside casinos and premium venues with gourmet food & beverage service</li>
-<li>Built and managed All In Party – a live-streamed online poker experience with real-time Discord banter</li>
-<li>Curated guest lists of high-profile players while maintaining a fun, laid-back, and safe atmosphere</li>
-</ul>
+<button type="submit" class="btn btn-primary w-100">Send Message</button>
+</form>
 </div>
 </div>
 </div>
 </div>
-</div>
-</section>
-
-<!-- Skills -->
-<section class="py-5">
-<div class="container">
-<h2 class="text-center section-title">Core Strengths</h2>
-<div class="row text-center">
-<div class="col-md-3 col-6 mb-4"><strong>Client Relationship Management</strong></div>
-<div class="col-md-3 col-6 mb-4"><strong>High-Stakes Negotiation</strong></div>
-<div class="col-md-3 col-6 mb-4"><strong>Event Production & Hospitality</strong></div>
-<div class="col-md-3 col-6 mb-4"><strong>Real Estate Investment</strong></div>
-<div class="col-md-3 col-6 mb-4"><strong>Brand Building</strong></div>
-<div class="col-md-3 col-6 mb-4"><strong>Live Streaming & Community</strong></div>
-<div class="col-md-3 col-6 mb-4"><strong>Discretion & Service Trust</strong></div>
-<div class="col-md-3 col-6 mb-4"><strong>Las Vegas Network</strong></div>
-</div>
-</div>
-</section>
-
-<!-- Contact -->
-<section class="py-5 bg-dark text-white">
-<div class="container text-center">
-<h2 class="section-title text-white">Let’s Connect</h2>
-<p class="lead mb-4">Open to new opportunities in client-facing roles, partnerships, or luxury experience ventures.</p>
-<a href="mailto:arielgardet@protonmail.com" class="btn btn-gold btn-lg me-3">arielgardet@protonmail.com</a>
-<a href="tel:+17253051405" class="btn btn-outline-light btn-lg">725-305-1405</a>
 </div>
 </section>
 
 <!-- Footer -->
-<footer class="py-4 text-center">
+<footer>
 <div class="container">
-<p class="mb-0">© 2025 Ariel Gardet • Las Vegas, Nevada</p>
+<p>&copy; 2025 Ariel Gardet. All rights reserved. | Las Vegas, NV</p>
 </div>
 </footer>
 
+<!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Smooth scrolling for nav links -->
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+anchor.addEventListener('click', function (e) {
+e.preventDefault();
+document.querySelector(this.getAttribute('href')).scrollIntoView({
+behavior: 'smooth'
+});
+});
+});
+</script>
 </body>
 </html>
-
