@@ -1,167 +1,383 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ariel Gardet | Sales Professional | Las Vegas</title>
-  <meta name="description" content="Ariel Gardet – High-ticket sales expert with 7-figure revenue experience. Ready for enterprise/B2B sales roles.">
-
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-
-
-  <style>
-    :root { --mauve:#c79ab0; --mauve-dark:#a67c8e; --black:#1a1a1a; --light:#fdfbfb; }
-    body { font-family:'Inter',sans-serif; background:var(--light); color:#333; }
-    h1,h2,h3 { font-family:'Playfair Display',serif; }
-
-
-    .hero {
-      background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=2069&auto=format&fit=crop') center/cover;
-      color:white; padding:220px 0 160px; text-align:center;
-    }
-    .hero h1 { font-size:4.8rem; }
-
-
-    .section { padding:110px 0; }
-    .section-dark { background:var(--black); color:white; }
-    .section-title { text-align:center; margin-bottom:70px; position:relative; }
-    .section-title::after { content:''; display:block; width:70px; height:4px; background:var(--mauve); margin:20px auto; }
-
-
-    .navbar { background:rgba(255,255,255,0.95); backdrop-filter:blur(10px); }
-    .nav-link { font-weight:600; color:var(--black)!important; }
-    .nav-link:hover, .navbar-brand:hover { color:var(--mauve)!important; }
-
-
-    .btn-mauve { background:var(--mauve); color:white; border:none; font-weight:600; padding:12px 30px; border-radius:50px; }
-    .btn-mauve:hover { background:var(--mauve-dark); }
-
-
-    .stat-number { font-size:3.5rem; font-weight:700; color:var(--mauve); }
-
-
-    .profile-img {
-      border-radius:20px;
-      box-shadow:0 20px 40px rgba(0,0,0,0.15);
-      max-width:100%;
-      height:auto;
-      border:6px solid white;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ariel Gardet | Real Estate & Entertainment Professional</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            overflow-x: hidden;
+        }
+        
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(45, 35, 50, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1rem 5%;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+        
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+            font-size: 0.95rem;
+            letter-spacing: 0.5px;
+        }
+        
+        nav a:hover {
+            color: #d8a7ca;
+        }
+        
+        .hero {
+            height: 100vh;
+            background: linear-gradient(135deg, rgba(45, 35, 50, 0.85) 0%, rgba(74, 63, 85, 0.85) 50%, rgba(107, 86, 112, 0.85) 100%),
+                        url('https://drive.google.com/uc?export=view&id=1RKDb4DI6F4cbrS7gy5xAOEPnuSVWuHVN') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 30% 50%, rgba(216, 167, 202, 0.1) 0%, transparent 50%);
+        }
+        
+        .hero-content {
+            z-index: 1;
+            max-width: 800px;
+            padding: 2rem;
+        }
+        
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+        
+        .hero p {
+            font-size: 1.4rem;
+            margin-bottom: 2rem;
+            color: #d8a7ca;
+            font-weight: 300;
+        }
+        
+        .hero .subtitle {
+            font-size: 1.1rem;
+            color: #ccc;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        section {
+            padding: 5rem 10%;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .about {
+            background: #f8f9fa;
+        }
+        
+        .experience {
+            background: white;
+        }
+        
+        .ventures {
+            background: #f8f9fa;
+        }
+        
+        .contact {
+            background: linear-gradient(135deg, #4a3f55 0%, #2d2332 100%);
+            color: white;
+        }
+        
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #4a3f55;
+            text-align: center;
+            position: relative;
+            padding-bottom: 1rem;
+        }
+        
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: #c998b8;
+        }
+        
+        .contact h2 {
+            color: white;
+        }
+        
+        .content-wrapper {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .about-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .experience-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .experience-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .experience-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+        
+        .experience-card h3 {
+            color: #a67b96;
+            margin-bottom: 0.5rem;
+            font-size: 1.5rem;
+        }
+        
+        .experience-card .duration {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            font-style: italic;
+        }
+        
+        .venture-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        
+        .venture-card h3 {
+            color: #a67b96;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .venture-card p {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: #555;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+            margin-top: 2rem;
+            font-size: 1.2rem;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .contact-item a {
+            color: #d8a7ca;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .contact-item a:hover {
+            color: #fff;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero p {
+                font-size: 1.2rem;
+            }
+            
+            nav ul {
+                gap: 1rem;
+                flex-wrap: wrap;
+            }
+            
+            section {
+                padding: 3rem 5%;
+            }
+            
+            h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
 </head>
-<body data-bs-spy="scroll" data-bs-target="#navbar">
-
-
-  <nav class="navbar navbar-expand-lg fixed-top shadow-sm">
-    <div class="container">
-      <a class="navbar-brand fw-bold fs-4" href="#" style="color:var(--mauve)">Ariel Gardet</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"><span class="navbar-toggler-icon"></span></button>
-      <div class="collapse navbar-collapse justify-content-end" id="nav">
-        <ul class="navbar-nav">
-          <li><a class="nav-link" href="#home">Home</a></li>
-          <li><a class="nav-link" href="#about">About</a></li>
-          <li><a class="nav-link" href="#results">Results</a></li>
-          <li><a class="nav-link" href="#experience">Experience</a></li>
-          <li><a class="nav-link" href="#contact">Contact</a></li>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#ventures">Ventures</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
-      </div>
-    </div>
-  </nav>
+    </nav>
 
-
-  <section id="home" class="hero">
-    <div class="container">
-      <h1>Ariel Gardet</h1>
-      <p class="lead fs-3 mb-2">High-Ticket Sales | Client Relationships | Revenue Growth</p>
-      <p class="fs-5 mb-4 opacity-90">Las Vegas-based closer ready for the next challenge</p>
-      <a href="#contact" class="btn btn-mauve btn-lg me-3">Let's Connect</a>
-      <a href="mailto:arielgardet@protonmail.com" class="btn btn-outline-light btn-lg">Email Me</a>
-    </div>
-  </section>
-
-
-  <section id="about" class="section bg-white">
-    <div class="container">
-      <h2 class="section-title">About Me</h2>
-      <div class="row align-items-center g-5">
-        <div class="col-lg-5 text-center">
-          <!-- THIS LINK IS 100% WORKING – I just tested it live -->
-          <img src="https://i.ibb.co/0jG6K7D/ariel.jpg" alt="Ariel Gardet" class="profile-img img-fluid">
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Ariel Gardet</h1>
+            <p>Real Estate & Poker Entrepreneur</p>
+            <p class="subtitle">Las Vegas Native | Sales Professional & Event Creator</p>
         </div>
-        <div class="col-lg-7">
-          <p class="lead fs-4">I’m a proven revenue generator who thrives on building trust with high-net-worth clients and closing big deals with confidence and charm.</p>
-          <p>For the past 7 years I’ve generated seven figures selling luxury experiences and investment opportunities in Las Vegas—one of the most competitive sales environments in the world.</p>
-          <p>Now I’m bringing that same energy, relationship skills, and hustle to enterprise/B2B sales roles. If you need someone who can walk into a room (or Zoom) and own it, let’s talk.</p>
+    </section>
+
+    <section id="about" class="about">
+        <div class="content-wrapper">
+            <h2>About Me</h2>
+            <div class="about-text">
+                <p>Las Vegas born and raised, I've built a diverse career in sales, real estate, and entertainment. From working with real estate investors to creating exclusive poker experiences, I thrive on building connections and delivering exceptional service. Currently exploring new opportunities in sales while enjoying motherhood.</p>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-
-  <section id="results" class="section section-dark">
-    <div class="container">
-      <h2 class="section-title text-white">Results That Speak</h2>
-      <div class="row text-center text-white">
-        <div class="col-md-4 mb-4"><div class="stat-number">7 Figures</div><p>Revenue personally closed</p></div>
-        <div class="col-md-4 mb-4"><div class="stat-number">100%</div><p>Repeat & referral rate</p></div>
-        <div class="col-md-4 mb-4"><div class="stat-number">6+ Years</div><p>High-stakes sales experience</p></div>
-      </div>
-    </div>
-  </section>
-
-
-  <section id="experience" class="section bg-white">
-    <div class="container">
-      <h2 class="section-title">Experience</h2>
-      <div class="row g-5 justify-content-center">
-        <div class="col-lg-8">
-          <div class="card shadow-sm p-4 mb-4 border-0">
-            <h4>Founder & Owner – HotGirlPoker / All In Party</h4>
-            <p class="text-muted">2020 – Present • Las Vegas</p>
-            <ul class="mb-0">
-              <li>Built a private, high-stakes entertainment brand from $0 → consistent six-figure months</li>
-              <li>Ran full sales cycles with ultra-high-net-worth clients</li>
-              <li>Delivered white-glove experiences that drove 100% repeat business</li>
-            </ul>
-          </div>
-          <div class="card shadow-sm p-4 border-0">
-            <h4>High-Value Investment Sales</h4>
-            <p class="text-muted">2018 – 2024 • Las Vegas</p>
-            <ul class="mb-0">
-              <li>Closed multimillion-dollar deals in a 100% commission environment</li>
-              <li>Excelled at long sales cycles, objection handling, and relationship selling</li>
-            </ul>
-          </div>
+    <section id="experience" class="experience">
+        <div class="content-wrapper">
+            <h2>Background & Experience</h2>
+            <div class="experience-grid">
+                <div class="experience-card">
+                    <h3>Real Estate Sales</h3>
+                    <p class="duration">2018 - 2024 | 6 Years</p>
+                    <p>Worked with real estate investors in the Las Vegas market, providing strategic guidance and market insights to help clients maximize their property investments.</p>
+                </div>
+                <div class="experience-card">
+                    <h3>New Construction Sales</h3>
+                    <p class="duration">Renowned Builder</p>
+                    <p>Partnered with a prestigious builder, guiding clients through new home construction and ensuring smooth transactions from start to finish.</p>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
+    <section id="ventures" class="ventures">
+        <div class="content-wrapper">
+            <h2>Recent Projects</h2>
+            
+            <div class="venture-card">
+                <h3>HotGirlPoker</h3>
+                <p>Founded and operated an exclusive poker company hosting premium live games at various venues and inside casinos. Created a laid-back, fun atmosphere while delivering top-tier service including high-end food, beverages, and an exceptional gaming environment. Curated exclusive guest lists to ensure the perfect mix of skilled and social players for unforgettable poker nights.</p>
+            </div>
+            
+            <div class="venture-card">
+                <h3>All In Party</h3>
+                <p>Pioneered online poker entertainment by hosting exclusive online games with live streaming. Created an interactive community experience using Discord for live communication, allowing players to engage in real-time banter and social interaction while playing. Combined the excitement of poker with the connectivity of modern streaming technology to build a unique online gaming community.</p>
+            </div>
+        </div>
+    </section>
 
-  <section id="contact" class="section section-dark">
-    <div class="container text-center">
-      <h2 class="section-title text-white">Get In Touch</h2>
-      <p class="lead mb-5">Open to Account Executive, Sales Development, and Client Success roles (remote or Las Vegas)</p>
-      <div class="mb-4">
-        <a href="mailto:arielgardet@protonmail.com" class="btn btn-mauve btn-lg me-4">arielgardet@protonmail.com</a>
-        <a href="tel:+17253051405" class="btn btn-outline-light btn-lg">725-305-1405</a>
-      </div>
-    </div>
-  </section>
+    <section id="contact" class="contact">
+        <div class="content-wrapper">
+            <h2>Get In Touch</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span>📧 Email:</span>
+                    <a href="mailto:arielgardet@protonmail.com">arielgardet@protonmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <span>📱 Phone:</span>
+                    <a href="tel:7253051405">725-305-1405</a>
+                </div>
+                <div class="contact-item">
+                    <span>📍 Location:</span>
+                    <span>Las Vegas, Nevada</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
 
-  <footer class="bg-black text-white py-4 text-center">
-    <p class="mb-0">© 2025 Ariel Gardet • Las Vegas, Nevada</p>
-  </footer>
+        // Add active state to navigation based on scroll position
+        window.addEventListener('scroll', () => {
+            let current = '';
+            const sections = document.querySelectorAll('section');
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
 
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    document.querySelectorAll('a[href^="#"]').forEach(a => a.addEventListener('click', e => {
-      e.preventDefault(); document.querySelector(a.getAttribute('href')).scrollIntoView({behavior:'smooth'});
-    }));
-  </script>
+            document.querySelectorAll('nav a').forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').substring(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
