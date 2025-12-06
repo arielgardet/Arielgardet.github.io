@@ -237,6 +237,50 @@
             color: #fff;
         }
         
+        .floating-button {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 999;
+        }
+        
+        .floating-button a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: linear-gradient(135deg, #c998b8 0%, #a67b96 100%);
+            color: white;
+            padding: 15px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            box-shadow: 0 5px 20px rgba(201, 152, 184, 0.4);
+            transition: all 0.3s;
+        }
+        
+        .floating-button a:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(201, 152, 184, 0.6);
+            background: linear-gradient(135deg, #d8a7ca 0%, #c998b8 100%);
+        }
+        
+        .floating-button span {
+            font-size: 1.3rem;
+        }
+        
+        @media (max-width: 768px) {
+            .floating-button {
+                bottom: 20px;
+                right: 20px;
+            }
+            
+            .floating-button a {
+                padding: 12px 20px;
+                font-size: 1rem;
+            }
+        }
+        
         @media (max-width: 768px) {
             .hero h1 {
                 font-size: 2.5rem;
@@ -251,17 +295,26 @@
                 flex-wrap: wrap;
             }
             
-            section {
-                padding: 3rem 5%;
+            .floating-button {
+                bottom: 20px;
+                right: 20px;
             }
             
-            h2 {
-                font-size: 2rem;
+            .floating-button a {
+                padding: 12px 20px;
+                font-size: 1rem;
             }
         }
     </style>
 </head>
 <body>
+    <div class="floating-button">
+        <a href="https://arielgardet.github.io/hotgirlpoker" target="_blank">
+            <span>♠</span>
+            HotGirlPoker
+        </a>
+    </div>
+    
     <nav>
         <ul>
             <li><a href="#home">Home</a></li>
@@ -312,7 +365,7 @@
             <h2>Recent Projects</h2>
             
             <div class="venture-card">
-                <h3>HotGirlPoker https://arielgardet.github.io/hotgirlpoker/ </h3>
+                <h3>HotGirlPoker</h3>
                 <p>Founded and operated an exclusive poker company hosting premium live games at various venues and inside casinos. Created a laid-back, fun atmosphere while delivering top-tier service including high-end food, beverages, and an exceptional gaming environment. Curated exclusive guest lists to ensure the perfect mix of skilled and social players for unforgettable poker nights.</p>
             </div>
             
